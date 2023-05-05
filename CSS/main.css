@@ -1,0 +1,143 @@
+/*Variables*/
+
+/*Colores
+    rojo: #d93a34
+    gris claro: #f7f7f7
+    gris medio: #a6a6a6
+    gris oscuro: #848484
+*/
+
+/*Medidas
+    contenedor: 62rem
+    texto: 1rem
+    titulo: 2rem
+*/
+
+/*Generales*/
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #848484;
+}
+
+h1,h2,h3,h4,h5,h5 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*Componentes*/
+.container {
+    margin: 0 auto;
+    max-width: 62rem;
+    padding: 1rem;
+}
+
+.header {
+    border-top: solid 4px #a6a6a6;
+    border-bottom: solid 1px #a6a6a6;
+    pading: 1rem 0;
+}
+
+.header__brand {
+    color: #d93a34;
+    font-weight: lighter;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.header__brand:hover {
+    opacity: 50%;
+}
+
+.header__brand-simple {
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+/* Página inicio */
+
+.hero {
+    padding: 2rem 0;
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
+.hero p {
+    margin:0;
+    line-height: 2.5rem;
+} /*esto aplica solo a los parrafos del hero */
+
+.guion {
+    display: inline-block;
+    border-top: 1px solid #848484;
+    width: 1rem;
+    height: .25rem;
+}
+.link {
+    color: #d93a34;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.link--single--title,.link--single--summary {
+    border-bottom: 2px solid #a6a6a6;
+    padding-bottom: 0.05rem;
+}
+
+.link--single--summary {
+    font-style: italic;
+}
+
+.link--single--title:hover,.link--single--summary:hover {
+    text-decoration: none;
+    border-bottom: 2px solid #848484;
+}
+
+.strong {
+    display: inline-block;
+    padding: .3rem;
+    background-color: #d93a34;
+    color: white;
+}
+
+.blog {
+    background-color:#f7f7f7;
+    padding: 2rem 0;
+}
+
+.blog__title {
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+
+.single {
+    padding: 2rem 0;
+    border-bottom: 1px solid #a6a6a6;
+    line-height: 1.6rem;
+}
+.single--last {
+    border: 0;
+}
+/*.single::last-child{
+    border:0;
+} esto hace lo mismo que lo anterior pero sin crear una clase nueva*/
+
+.single__hgroup  {
+    display: inline;
+}
+.single__hgroup p {
+    display: inline;
+}
+.single__title{
+    display: inline;
+    font-size: 1rem;
+}
+.single__summary {
+    display: inline;
+}
+.single__created {
+    color: #a6a6a688;
+    font-style: italic;
+}
